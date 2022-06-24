@@ -19,3 +19,4 @@ public class Estudo3 {
     }
 }
 
+ //Código para treino de Scanner e como fazer a quebra utilizando String.equals, ainda necessita de polimento.
