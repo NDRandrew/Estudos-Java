@@ -48,7 +48,7 @@ public class Estudo4 extends JPanel {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            var frame = new JFrame("Paint Fake");
+            var frame = new JFrame("Paint Fake"); //Projeto de um paint fictício utilizando objetos e opções gráficas, sem opção de apagar ou voltar as linhas 
             frame.getContentPane().add(new Estudo4(), BorderLayout.CENTER);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setSize(1000, 1000);
