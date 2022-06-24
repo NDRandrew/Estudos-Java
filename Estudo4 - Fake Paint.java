@@ -12,13 +12,13 @@ import javax.swing.SwingUtilities;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class Estudo4 extends JPanel {
+public class Estudo4 extends JPanel { //Extensão para utilização do conteudo JPanel
     private static final long serialVersionUID = -3630443364990545965L;
 
     private List<List<Point>> curves = new ArrayList<>();
 
     public Estudo4() {
-        // Register event listeners on construction of the panel.
+        // Registrar os eventos
         addMouseListener(new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
                 var newCurve = new ArrayList<Point>();
@@ -27,7 +27,7 @@ public class Estudo4 extends JPanel {
             }
         });
 
-        addMouseMotionListener(new MouseMotionAdapter() {   
+        addMouseMotionListener(new MouseMotionAdapter() {    //Para que o mouse e linha funcione
             public void mouseDragged(MouseEvent e) {
                 curves.get(curves.size() - 1).add(new Point(e.getX(), e.getY()));
                 repaint(0, 0, getWidth(), getHeight());
@@ -35,7 +35,7 @@ public class Estudo4 extends JPanel {
         });
     }
 
-    public void paintComponent(Graphics g) {
+    public void paintComponent(Graphics g) { //Para que haja a escrita
         super.paintComponent(g);
         for (var curve: curves) {
             var previousPoint = curve.get(0);
@@ -46,7 +46,7 @@ public class Estudo4 extends JPanel {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //Parte grafica e junção com metodos acima
         SwingUtilities.invokeLater(() -> {
             var frame = new JFrame("Paint Fake"); //Projeto de um paint fictício utilizando objetos e opções gráficas, sem opção de apagar ou voltar as linhas 
             frame.getContentPane().add(new Estudo4(), BorderLayout.CENTER);
