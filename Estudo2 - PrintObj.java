@@ -16,4 +16,4 @@ public class Estudo2 {
         Ficha("11 999999999" , "Andre"); //Metodo sendo implementado
         System.out.println("-----------------------------");
     }
-}
+} //Print utilizando Objetos e Metodos para ficar um código com maior facilidade de entendimento e modificação
