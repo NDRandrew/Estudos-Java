@@ -1,5 +1,5 @@
 public class Estudo1 {
-    static void nomeIdade(String name, int age){
+    static void nomeIdade(String name, int age){ //Criação do Metodo nomeIdade
         if (name.equals("Andre")){
             System.out.println(name + " tem " + age + " anos!");
         } else {
@@ -9,4 +9,4 @@ public class Estudo1 {
     public static void main(String[] args){
         nomeIdade("Andre", 22);
     }
-}
+} //Codigo de print de método para treino
